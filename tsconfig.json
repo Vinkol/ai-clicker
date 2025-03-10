@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",  // Это позволяет использовать новый JSX трансформер без импорта React
+  },
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ]
+}
