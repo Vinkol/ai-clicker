@@ -24,4 +24,4 @@ AI Learning Simulator — это симулятор процесса обуче�
 Склонируй проект на свой локальный компьютер:
 
 ```bash
-git clone https://github.com/твое_имя_пользователя/ai-clicker.git
+git clone https://github.com/vinkol/ai-clicker.git
