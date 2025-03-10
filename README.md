@@ -1,54 +1,27 @@
-# React + TypeScript + Vite
+# AI Learning Simulator
+![Wiew](public/werbewrn.jpg)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+AI Learning Simulator — это симулятор процесса обучения ИИ, где ты можешь кликать, чтобы увеличить количество "знаний", покупать апгрейды, а также включить автообучение, чтобы ИИ учился сам. Система престижа добавляет дополнительную мотивацию для сброса прогресса и получения бонусов.
 
-Currently, two official plugins are available:
+Проект создан с использованием **React**, **TypeScript**, **Vite**, **Tailwind CSS** и **Zustand**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Демо
 
-## Expanding the ESLint configuration
+🔗 [Посмотреть проект на Vercel](https://ai-clicker.vercel.app/)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Функции
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **Клик для увеличения знаний**: Каждое нажатие на кнопку увеличивает количество знаний.
+- **Апгрейды**: Покупка апгрейдов увеличивает количество знаний за клик.
+- **Автообучение**: Включение автообучения позволяет ИИ получать знания автоматически.
+- **Престиж**: Система престижа позволяет сбрасывать прогресс для получения бонусов.
+- **Сохранение прогресса**: Прогресс сохраняется в LocalStorage, чтобы можно было продолжить игру с того места, где ты остановился.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Установка и запуск
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Клонирование репозитория
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+Склонируй проект на свой локальный компьютер:
+
+```bash
+git clone https://github.com/твое_имя_пользователя/ai-clicker.git
